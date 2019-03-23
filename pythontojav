@@ -1,0 +1,153 @@
+/* 
+Python
+apples = 14
+print(apples)
+print("I have {} apples.".format(apples))*/
+
+
+
+const apples = 14
+console.log(apples)
+console.log(`I have ${apples} apples.`)
+//------------------------------------------
+
+/* Python
+materials = ['wood', 'metal', 'stone']
+words = {
+'elephant': "The world's largest land mammal.",
+'school': 'A place of learning.',
+'ice cream': 'A delicious milk-based dessert.',
+}
+*/
+
+const materials = ['wood', 'metal', 'stone']
+console.log(materials)
+
+const words = {}
+words.elephant = "The world`s largest land mammal."
+words.school = "A place of learning."
+words.iceCream = 'A delicious milk-based dessert'
+console.log(words)
+
+//-----------------------------------------------------------
+/* 
+num = 16
+if num > 10:
+  print("{} is greater than 10.".format(num))
+elif num == 10:
+  print("{} is exactly 10.".format(num))
+else:
+  print("{} must be less than 10.".format(num))
+  
+  */
+const num = 16
+/*switch (num) {
+    case num > 10:
+        console.log(`${num} is greater than 10.`);
+        break;
+    case num === 10:
+        console.log(`${num} is exactly 10.`);
+        break;
+}
+console.log(`${num} must be less than 10`);*/
+
+while (true) {
+    if (num > 10){
+        console.log(`${num} is greater than 10.`);
+        break;
+    }else if (num === 10){
+        console.log(`${num} is exactly 10.`);
+        break;
+    } else {
+        console.log(`${num} must be less than 10`);
+        break;
+    }
+}
+
+//-----------------------------------------------------------------
+
+
+/* for x in range(0,10):
+  print("Doing the same thing over and over.") */
+
+
+for (let x = 0; x < 10; x++ ){
+    console.log("Doing the same thing over and over.")
+}
+
+
+//------------------------------------------------------------------
+/*base = 5
+  for num in range(0,20):
+    print(num + base)*/
+
+var base = 5
+for (let x = 0; x < 20; x++){
+    console.log(x+base)
+}
+
+
+//----------------------------------
+/* total = 0
+for num in range(0,100):
+  total += num
+
+print(total) */
+total = 0
+for(let x = 0; x < 100; x++){
+    total += x
+}
+console.log(total)
+//------------------------------------
+/*
+for height in range(3,15):
+  if height > 9:
+    print("You can get on the rollercoaster!")
+  else:
+    print("You are too short to ride this rollercoaster.")*/
+
+const height = 9
+while (true){
+    if (height >= 9){
+        console.log("You Can get on the rollercoaster")
+        break;
+    } else {
+        console.log("You are too short to ride this rollercoaster")
+        break;
+    }
+}
+
+//-------------------------------------------------------
+
+/*
+containers = ['purse', 'wallet', 'backback']
+for container in containers:
+print(container) */
+
+const containers = ['purse', 'wallet', 'backback']
+for (let x in containers){
+    console.log(containers[x])
+}
+//-------------------------------------------
+
+/* def hello_world():
+return "Hello world!"
+
+hello_world() */
+function world() {
+    console.log("hello world");
+}
+world();
+//------------------------------------------------
+
+/* def add(first_num, second_num):
+return first_num + second_num
+
+amount = add(5, 7)
+print(amount)*/
+function add(first_num,last_num){
+    return first_num + last_num; 
+}
+console.log(add(4,4))
+//------------------------------------------------
+
